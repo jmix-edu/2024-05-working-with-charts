@@ -24,7 +24,7 @@ public class ProjectStatsService {
 
                     ProjectStats stats = dataManager.create(ProjectStats.class);
                     stats.setProjectName(project.getName());
-
+                    stats.setId(project.getId());
                     List<Task> tasks = project.getTasks();
                     stats.setTasksCount(tasks.size());
 

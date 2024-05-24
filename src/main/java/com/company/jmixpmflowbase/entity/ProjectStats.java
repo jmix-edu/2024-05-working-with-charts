@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @JmixEntity
 public class ProjectStats {
-    @JmixGeneratedValue
+
     @JmixId
     private UUID id;
 

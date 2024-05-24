@@ -8,6 +8,13 @@
         <item view="TimeEntry.list" title="msg://com.company.jmixpmflowbase.view.timeentry/timeEntryListView.title"/>
         <item view="ProjectStatsView"
               title="msg://com.company.jmixpmflowbase.view.projectstats/projectStatsView.title"/>
+        <item view="PieChartView" title="msg://com.company.jmixpmflowbase.view.piechart/pieChartView.title"/>
+        <item view="RequestsHistoryView"
+              title="msg://com.company.jmixpmflowbase.view.requestshistory/requestsHistoryView.title"/>
+        <item view="NativeJsonView" title="msg://com.company.jmixpmflowbase.view.nativejson/nativeJsonView.title"/>
+        <item view="DishesRaitingView"
+              title="msg://com.company.jmixpmflowbase.view.dishesraiting/dishesRaitingView.title"/>
+        <item view="CandlestickView" title="msg://com.company.jmixpmflowbase.view.candlestick/candlestickView.title"/>
     </menu>
 
 </menu-config>

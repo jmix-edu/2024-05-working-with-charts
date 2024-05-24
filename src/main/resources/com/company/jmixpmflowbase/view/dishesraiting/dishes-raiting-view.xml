@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view" xmlns:charts="http://jmix.io/schema/charts/ui"
+      title="msg://dishesRaitingView.title">
+    <layout>
+        <charts:chart id="chart"
+                      width="100%"
+                      height="100%">
+            <charts:tooltip trigger="AXIS">
+                <charts:axisPointer type="SHADOW"/>
+            </charts:tooltip>
+            <charts:legend/>
+            <charts:toolbox>
+                <charts:features>
+                    <charts:saveAsImage type="PNG" title="Save as PNG" show="true"/>
+                </charts:features>
+            </charts:toolbox>
+            <charts:xAxes>
+                <charts:xAxis/>
+            </charts:xAxes>
+
+            <charts:yAxes>
+                <charts:yAxis name="Rating" position="LEFT" alignTicks="true">
+                    <charts:axisLine show="true"/>
+                </charts:yAxis>
+                <charts:yAxis name="Price" position="RIGHT" alignTicks="true">
+                    <charts:axisLabel formatter="{value} $"/>
+                    <charts:axisLine show="true">
+                        <charts:lineStyle color="#fac858"/>
+                    </charts:axisLine>
+                </charts:yAxis>
+            </charts:yAxes>
+
+            <charts:series>
+                <charts:bar name="Taste rating" yAxisIndex="0" stack="totalRating" stackStrategy="ALL"/>
+                <charts:bar name="Serving Rating" yAxisIndex="0" stack="totalRating"/>
+                <charts:line name="Price" yAxisIndex="1"/>
+            </charts:series>
+
+        </charts:chart>
+    </layout>
+</view>
